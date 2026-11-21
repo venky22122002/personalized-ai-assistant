@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+target/
+.idea/
+
+# Eclipse workspace metadata
+.metadata/
+
+# IDE-generated files
+.factorypath
+
+# macOS
+*.iml
+.DS_Store
+*.log

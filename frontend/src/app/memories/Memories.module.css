@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px 0 16px;
+}
+
+.searchBar {
+  margin-bottom: 16px;
+}
+
+.categoryChips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  scrollbar-width: none;
+}
+.categoryChips::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  padding: 6px 14px;
+  border-radius: 18px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.chip.active {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.formCard {
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.importanceSelector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
+
+.starBtn {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  transition: color 0.15s, transform 0.15s;
+}
+.starBtn.active {
+  color: var(--accent-4);
+  transform: scale(1.1);
+}
+
+.memoryCard {
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  color: var(--accent-4);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+.content {
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.deleteBtn {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  transition: color 0.2s;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.deleteBtn:hover {
+  color: var(--high);
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.infoBanner {
+  background: linear-gradient(135deg, rgba(124, 106, 255, 0.1), rgba(78, 205, 196, 0.06));
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}

@@ -1,0 +1,137 @@
+.hero {
+  position: relative;
+  padding: 32px 24px;
+  background: linear-gradient(135deg, rgba(124, 106, 255, 0.12) 0%, rgba(78, 205, 196, 0.08) 100%);
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-lg);
+  margin: 20px 0 24px;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.heroOrb {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroDate {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-2);
+  margin-bottom: 6px;
+}
+
+.heroGreeting {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.heroSub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNum {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.statNum.red {
+  color: var(--high);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+}
+
+.statDiv {
+  width: 1px;
+  height: 36px;
+  background: var(--border-bright);
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.taskRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+
+.taskLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.taskTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.doneBtn {
+  color: var(--done) !important;
+  border-color: rgba(107, 203, 119, 0.3) !important;
+}
+.doneBtn:hover {
+  background: rgba(107, 203, 119, 0.15) !important;
+}
+
+.quickActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}

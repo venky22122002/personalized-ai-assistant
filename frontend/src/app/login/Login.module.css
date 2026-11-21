@@ -1,0 +1,117 @@
+.container {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--bg-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.orb1, .orb2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+.orb1 {
+  width: 360px; height: 360px;
+  background: radial-gradient(circle, rgba(124,106,255,0.25) 0%, transparent 70%);
+  top: -60px; left: -60px;
+}
+.orb2 {
+  width: 280px; height: 280px;
+  background: radial-gradient(circle, rgba(78,205,196,0.18) 0%, transparent 70%);
+  bottom: 0; right: -40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(18, 18, 30, 0.85);
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-xl);
+  padding: 36px 28px;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  animation: fadeInUp 0.4s ease both;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.logoIcon {
+  font-size: 1.8rem;
+  color: var(--accent);
+  filter: drop-shadow(0 0 8px var(--accent-glow));
+}
+.logoText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.sub {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.error {
+  color: var(--high);
+  font-size: 0.85rem;
+  padding: 10px 14px;
+  background: rgba(255,107,107,0.08);
+  border: 1px solid rgba(255,107,107,0.2);
+  border-radius: var(--radius-sm);
+}
+
+.toggle {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.toggleBtn {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

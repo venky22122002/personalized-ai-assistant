@@ -1,0 +1,47 @@
+.header {
+  padding: 24px 0 16px;
+}
+
+.section {
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.sectionTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.itemRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.itemRow:last-child {
+  border-bottom: none;
+}
+
+.itemLabel {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.itemValue {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.dangerSection {
+  padding: 20px;
+  margin-top: 32px;
+  border-color: rgba(255, 107, 107, 0.2);
+}
